@@ -1,0 +1,7 @@
+<h2>Food Donation Details</h2>
+<p><strong>Location:</strong> {{ report.location }}</p>
+<p><strong>Quantity:</strong> {{ report.quantity }}</p>
+<p><strong>Delivery Person:banglore</strong> {{ report.delivery_person.user.username }}</p>
+<p><strong>Contact:9008765432</strong> {{ report.delivery_person.phone }}</p>
+<p><strong>Current Location:silk institute</strong> {{ report.delivery_person.current_location }}</p>
+<p><strong>Status:</strong> {% if report.is_picked_up %}Picked Up{% else %}Not Picked Up{% endif %}</p>
